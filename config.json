@@ -1,0 +1,16 @@
+{
+  "params": {
+    "local_server": true,
+    "local_uri": "mysql://root:@localhost/techbytz" ,
+    "prod_uri": "mysql://root:@localhost/techbytz",
+    "fb_url": "https://www.facebook.com/nikhil.jivtode.54",
+    "tw_url": "https://www.facebook.com/nikhil.jivtode.54",
+    "gh_url": "https://github.com/aniketJivtode/my_projects",
+    "mail-user": "aniiketjivtode@gmail.com",
+    "mail-password": "",
+    "about_txt": "Hey folks its Aniket here, I write informational blogs about technology, if you like my work please do write me.",
+    "no_of_posts": 2,
+    "admin-user": "admin",
+    "admin-password": "admin"
+  }
+}

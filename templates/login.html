@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+    <div class="container py-5">
+    <div class="row">
+        <div class="col-md-12">
+		<div class="col-md-12 text-center mb-5">
+            <img src="https://steemitimages.com/400x400/https://res.cloudinary.com/hpiynhbhq/image/upload/v1515937694/qgq17qfr7alwq9hqgkil.png">
+			</div>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <!-- form card login -->
+                    <div class="card rounded-0" id="login-form">
+                        <div class="card-header">
+                            <h3 class="mb-0">User Login</h3>
+                        </div>
+                        <div class="card-body">
+                            <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" action="/dashboard" method="POST">
+                                <div class="form-group">
+                                    <label for="uname">Username</label>
+                                    <input type="text" class="form-control form-control-lg rounded-0" name="uname" id="uname" required="">
+
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control form-control-lg rounded-0" id="pwd1" name="pass" required="">
+
+                                </div>
+                                <div>
+                                    <label class="custom-control custom-checkbox">
+                                     <a href="javascript:void('register-form-link');" class="register-form-link">Register</a>
+                                    </label>
+									<label class="custom-control custom-checkbox">
+                                     <a href="javascript:void('forgot-form-link');" class="forgot-form-link">Forgot Password</a>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /form card login end-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

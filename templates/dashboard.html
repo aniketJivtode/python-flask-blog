@@ -1,0 +1,55 @@
+{% extends 'template_layout.html' %}
+{% block body  %}
+<!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://source.unsplash.com/1600x900/?admin')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Admin Panel</h1>
+            <span class="subheading">Manage your blog here</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<div class="container">
+      <div class="row">
+          <div class="site-heading">
+            <h1>Basic Actions</h1>
+           <a href="/edit/0"> <button class="btn btn-primary"> Add a New Post</button></a>
+           <a href="/logout"> <button class="btn btn-primary"> Logout </button></a>
+          </div>
+      </div>
+    </div>
+<hr>
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Edit Posts</h1>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">SrNo</th>
+      <th scope="col">Title</th>
+      <th scope="col">Date</th>
+      <th scope="col">AddedBy</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for post in posts %}
+    <tr>
+      <td>{{post.id}}</td>
+      <td>{{post.Title}}</td>
+      <td>{{post.Date}}</td>
+      <td>{{post.AddedBy}}</td>
+      <td><button class="btn btn-primary"><a href="/edit/{{post.id}}">Edit</a></button></td>
+      <td><button class="btn btn-primary"><a href="/delete/{{post.id}}">Delete</a></button></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+  </div>
+{% endblock  %}

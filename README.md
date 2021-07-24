@@ -1,2 +1,2 @@
 # python-flask-blog
-This is a blog app based on flask framework
+This is a generic blog app created with flask framework having email notification feature
